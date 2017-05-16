@@ -1,0 +1,26 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start:win": "IF EXIST build RMDIR /S /Q build ELSE MKDIR build & npm run server",
+    "start": "rm -rf build & npm run server",
+	"server": "webpack --config webpack.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.4.0",
+    "start-server-webpack-plugin": "^2.2.0",
+    "webpack": "^2.5.1",
+    "webpack-node-externals": "^1.6.0"
+  },
+  "dependencies": {
+    "express": "~4.15.2",
+    "mongoose": "^4.9.9",
+    "path": "^0.12.7"
+  }
+}
