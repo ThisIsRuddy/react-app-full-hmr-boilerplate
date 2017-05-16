@@ -9,4 +9,4 @@ then
 
 then
 
-`npm run start (or start:win for windows)`
+`npm start` or `npm run start:win` for windows
