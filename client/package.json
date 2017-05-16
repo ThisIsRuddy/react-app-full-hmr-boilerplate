@@ -13,8 +13,6 @@
     "babel-loader": "^7.0.0",
     "babel-preset-env": "^1.4.0",
     "babel-preset-react": "^6.24.1",
-    "file-loader": "^0.11.1",
-    "npm-run-all": "^4.0.2",
     "react-hot-loader": "^3.0.0-beta.7",
     "webpack": "^2.5.1",
     "webpack-dev-server": "^2.4.5"
