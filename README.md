@@ -1,18 +1,10 @@
 # react-app-full-hmr-boilerplate
 Bare-bones react app with back-end bundled with hmr and front-end hmr
 
-`npm install`
+##Install
+`npm install && npm run install:server && npm run install:client`
 
-then
-
-`npm run install:server`
-
-then
-
-`npm run install:client`
-
-then
-
+##Run
 `npm start` or `npm run start:win` for windows
 
 
