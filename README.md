@@ -1,15 +1,11 @@
 # react-app-full-hmr-boilerplate
 Bare-bones react app with back-end bundled with hmr and front-end hmr
 
-## Install
-`npm install && npm run install:server && npm run install:client`
-
-## Run
-`npm start` or `npm run start:win` for windows
-
+## Deploy
+`docker-compose build && docker-compose up -d`
 
 Front-end HMR:
-	- navigate to localhost:3001
+	- navigate to localhost:8080
 	- edit App.js and save, this triggers:
 		1. compiling of new chunks
 		2. hot reload sent to connected clients with new chunks

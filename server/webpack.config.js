@@ -33,5 +33,8 @@ module.exports = {
     output: {
         path: path.join(__dirname, 'build'),
         filename: 'server.js'
-    }
+    },
+	watchOptions: {
+		poll: 1000
+	}
 }

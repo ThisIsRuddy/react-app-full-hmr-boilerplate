@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "start:win": "IF EXIST build RMDIR /S /Q build ELSE MKDIR build & npm run server",
+    "start:win": "npm run server",
     "start": "rm -rf build & npm run server",
 	"server": "webpack --config webpack.config.js"
   },

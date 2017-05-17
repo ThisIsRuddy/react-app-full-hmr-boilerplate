@@ -1,3 +1,3 @@
 import React from 'react'
-const App = () => <div>Hello from React & Ruddy, This is actually deeeecent! Such a sick ting</div>
+const App = () => <div>Hello from React! :)</div>
 export default App
