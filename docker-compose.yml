@@ -1,0 +1,27 @@
+version: '2'
+services:
+    client:
+        container_name: app_client
+        restart: always
+        build:
+            context: ./client
+            dockerfile: ./Dockerfile
+        ports:
+          - "8080:8080"
+        volumes:
+          - ./client/package.json:/var/www/client/package.json
+          - ./client/webpack.config.js:/var/www/client/webpack.config.js
+          - ./client/src:/var/www/client/src
+    server:
+        container_name: app_server
+        restart: always
+        build:
+            context: ./server
+            dockerfile: ./Dockerfile
+        ports:
+          - "3000:3000"
+        volumes: 
+          - ./server/.babelrc:/var/www/server/.babelrc
+          - ./server/package.json:/var/www/server/package.json
+          - ./server/webpack.config.js:/var/www/server/webpack.config.js
+          - ./server/src:/var/www/server/src
