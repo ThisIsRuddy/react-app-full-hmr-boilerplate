@@ -12,4 +12,6 @@ RUN apk update
 RUN cd /var/www/client
 RUN npm install
 
+EXPOSE 8080
+
 CMD npm start
