@@ -27,7 +27,10 @@ module.exports = {
 			'Access-Control-Allow-Origin': '*',
 			'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept'
 		},
-		historyApiFallback: true
+		historyApiFallback: true,
+		proxy: {
+			"/api/*": "http://server:3000"
+		}
 	},
 	module: {
 		rules: [

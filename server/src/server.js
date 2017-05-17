@@ -1,16 +1,16 @@
 import express from 'express'
 const app = express()
-app.get('/api', (req, res) => {
+app.get('/api/', (req, res) => {
     res.send({
       message: 'I am a server route and can also be hot reloaded!'
     })
 })
-app.get('/dave', (req, res) => {
+app.get('/api/dave', (req, res) => {
     res.send({
       message: 'You passed the DAVE test!'
     })
 })
-app.get('/beaut', (req, res) => {
+app.get('/api/beaut', (req, res) => {
     res.send({
       message: 'Such a beauty!'
     })
