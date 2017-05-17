@@ -35,7 +35,11 @@ module.exports = {
 				test: /\.js?$/,
 				use: 'babel-loader',
 				exclude: /node_modules/
-			}
+			},
+      {
+        test: /\.css$/,
+        loader: "style-loader!css-loader?url=false"
+      }
 		]
 	},
 	plugins: [

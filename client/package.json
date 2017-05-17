@@ -9,17 +9,19 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+	"path": "^0.12.7",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
     "babel-preset-env": "^1.4.0",
     "babel-preset-react": "^6.24.1",
     "react-hot-loader": "^3.0.0-beta.7",
+    "style-loader": "^0.17.0",
+	"css-loader": "^0.28.1",
     "webpack": "^2.5.1",
-    "webpack-dev-server": "^2.4.5"
-  },
-  "dependencies": {
-    "path": "^0.12.7",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "webpack-dev-server": "^2.4.5",
+	"semantic-ui-react": "^0.68.3",
+	"semantic-ui-css": "^2.2.10"
   }
 }
