@@ -9,6 +9,7 @@ services:
         ports:
           - "8080:8080"
         volumes:
+          - ./client/.babelrc:/var/www/client/.babelrc
           - ./client/package.json:/var/www/client/package.json
           - ./client/webpack.config.js:/var/www/client/webpack.config.js
           - ./client/src:/var/www/client/src
